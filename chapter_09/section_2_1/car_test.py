@@ -1,4 +1,4 @@
-from chapter_09.section_2.car import Car
+from chapter_09.section_2_1.car import Car
 
 
 my_new_car = Car('audi', 'a4', 2016)
