@@ -2,7 +2,7 @@ import pygame.ftfont
 
 class Button():
 
-    def __int__(self, ai_settings, screen, msg):
+    def __init__(self, ai_settings, screen, msg):
         """初始化按钮的属性"""
         self.screen = screen
         self.screen_rect = screen.get_rect()
