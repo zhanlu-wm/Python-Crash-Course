@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 第三方应用程序
+    'bootstrap3',
+
     # 我的应用程序
     'learning_logs',
     'users',
@@ -79,8 +82,14 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'learning_log',
+        'USER': 'root',
+        'PASSWORD': 'root123',
+        'HOST': '127.0.0.1',
+        'PORT':'3306',
     }
 }
 
@@ -132,3 +141,9 @@ STATIC_URL = '/static/'
 
 # 我的设置
 LOGIN_URL = '/users/login/'
+
+
+# django-bootstrap3的设置
+BOOTSTRAP3 = {
+    'include_jquery': True
+}
