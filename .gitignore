@@ -3,4 +3,6 @@
 **/*.iml
 __pycache__/
 *.pyc
+venv/
+
 ll_env/
